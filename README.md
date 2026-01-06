@@ -1,13 +1,30 @@
 # r7_inference_analyze
 ## パッケージ概要
 深江用．mmdetectionのtest.pyによる推論処理を解析するためのパッケージ．
+## インストール方法
+1. githubからクローン  
+```
+$git clone https://github.com/tominagalab/r7_inference_analyze.git
+```
+2. venv仮想環境作成と起動
+```
+$cd r7_inference_analyze
+$python -m venv .venv
+$source .venv/bin/activate
+```
+3. 必要なパッケージのインストール
+```
+$pip install -r requirements.txt
+```
 ## 同梱物
 - README.md : 本ファイル．説明書．  
 - analyze.py : 推論処理解析用スクリプト  
 ## ディレクトリ構成
-- r7_inference_analyze : ルートディレクトリ
-  - src : スクリプトソースコード配置場所
-  - data : 解析対象データ群配置場所
+```
+r7_inference_analyze : ルートディレクトリ
+├── data : 解析対象データ群配置場所
+└── src : スクリプトソースコード配置場所
+```
 ## 使い方
 ### analyze.py
 1. dataディレクトリ内に専用の作業ディレクトリを作成する（例：data/ann01）
